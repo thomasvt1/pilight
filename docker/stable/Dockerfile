@@ -1,6 +1,8 @@
-FROM ubuntu:16.04
+FROM ubuntu
 
 MAINTAINER Mark Kuipers <mmjgkuipers@gmail.com>
+
+RUN echo "Hello!"
 
 VOLUME /etc/pilight
 
@@ -14,6 +16,6 @@ RUN apt-get update && apt-get install -y pilight
 
 COPY config.json /etc/pilight/config.json
 
-EXPOSE 5001/tcp
+EXPOSE 5001
 
 
