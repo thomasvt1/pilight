@@ -14,6 +14,6 @@ RUN apt-get update && apt-get install -y pilight
 
 COPY config.json /etc/pilight/config.json
 
-EXPOSE 5001
+EXPOSE 5001/tcp
 
 
