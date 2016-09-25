@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 MAINTAINER Mark Kuipers <mmjgkuipers@gmail.com>
 
@@ -14,8 +14,4 @@ COPY config.json /etc/pilight/config.json
 
 EXPOSE 5001
 
-VOLUME \
-/etc/pilight \
-/usr/local/lib/pilight \
-/usr/local/share/pilight
 
