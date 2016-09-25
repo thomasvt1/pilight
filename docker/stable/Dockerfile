@@ -16,6 +16,8 @@ RUN apt-get update && apt-get install -y pilight
 
 COPY config.json /etc/pilight/config.json
 
+RUN docker-daemon -D
+
 EXPOSE 5001
 
 
