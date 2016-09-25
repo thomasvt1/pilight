@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y pilight pilight-firmware
 
 COPY config.json /etc/pilight/config.json
 
-RUN pilight-daemon -D
+RUN pilight-daemon
 
 EXPOSE 5001
 
